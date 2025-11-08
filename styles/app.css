@@ -1,0 +1,6 @@
+
+/* Minor refinements */
+::selection { background: rgba(24,185,139,0.2); }
+input, select, textarea { transition: box-shadow .2s, border-color .2s; }
+button { transition: transform .05s ease; }
+button:active { transform: translateY(1px); }

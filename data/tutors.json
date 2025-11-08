@@ -1,0 +1,140 @@
+[
+  {
+    "id": "t1",
+    "name": "Dr. Salem Al‑Fahad",
+    "subjects": [
+      "Math",
+      "Calculus",
+      "Physics"
+    ],
+    "city": "Jeddah",
+    "rate": 150,
+    "rating": 4.9,
+    "verified": true,
+    "modality": [
+      "Online",
+      "In‑person"
+    ],
+    "languages": [
+      "Arabic",
+      "English"
+    ],
+    "experience": "8 years university & private tutoring",
+    "bio": "STEM specialist with a calm, structured approach. I help students master concepts with visuals and spaced practice.",
+    "avatar": "https://images.unsplash.com/photo-1544723795-3fb6469f5b39?q=80&w=1200&auto=format&fit=crop"
+  },
+  {
+    "id": "t2",
+    "name": "Mohammed Al‑Harbi",
+    "subjects": [
+      "IELTS",
+      "TOEFL",
+      "Academic Writing"
+    ],
+    "city": "Riyadh",
+    "rate": 120,
+    "rating": 4.7,
+    "verified": true,
+    "modality": [
+      "Online"
+    ],
+    "languages": [
+      "Arabic",
+      "English"
+    ],
+    "experience": "CELTA‑certified, 5 years test prep",
+    "bio": "Score‑boosting strategies and realistic mock tests. Many students jump a whole band in 6–8 weeks.",
+    "avatar": "https://images.unsplash.com/photo-1544006659-f0b21884ce1d?q=80&w=1200&auto=format&fit=crop"
+  },
+  {
+    "id": "t3",
+    "name": "Lama Al‑Zahrani",
+    "subjects": [
+      "Programming",
+      "Python",
+      "Data Structures"
+    ],
+    "city": "Jeddah",
+    "rate": 180,
+    "rating": 4.8,
+    "verified": true,
+    "modality": [
+      "Online",
+      "In‑person"
+    ],
+    "languages": [
+      "Arabic",
+      "English"
+    ],
+    "experience": "Software engineer, 6 years mentoring",
+    "bio": "Project‑based learning: build small apps while mastering fundamentals. Perfect for uni students and beginners.",
+    "avatar": "https://images.unsplash.com/photo-1554151228-14d9def656e4?q=80&w=1200&auto=format&fit=crop"
+  },
+  {
+    "id": "t4",
+    "name": "khaild Al‑Qahtani",
+    "subjects": [
+      "Chemistry",
+      "Biology"
+    ],
+    "city": "Dammam",
+    "rate": 100,
+    "rating": 4.5,
+    "verified": false,
+    "modality": [
+      "Online"
+    ],
+    "languages": [
+      "Arabic",
+      "English"
+    ],
+    "experience": "High‑school exam prep, 4 years",
+    "bio": "Focused on concept maps and exam tactics. First trial lesson is a diagnostic.",
+    "avatar": "https://images.unsplash.com/photo-1547425260-76bcadfb4f2c?q=80&w=1200&auto=format&fit=crop"
+  },
+  {
+    "id": "t5",
+    "name": "Reema Al‑Najjar",
+    "subjects": [
+      "Arabic",
+      "Qur'an",
+      "Tajweed"
+    ],
+    "city": "Makkah",
+    "rate": 90,
+    "rating": 4.6,
+    "verified": true,
+    "modality": [
+      "Online"
+    ],
+    "languages": [
+      "Arabic"
+    ],
+    "experience": "Certified teacher, 7 years",
+    "bio": "Gentle, step‑by‑step tajweed and reading fluency coaching for kids and adults.",
+    "avatar": "https://images.unsplash.com/photo-1527980965255-d3b416303d12?q=80&w=1200&auto=format&fit=crop"
+  },
+  {
+    "id": "t6",
+    "name": "Yara Al‑Subaie",
+    "subjects": [
+      "Art",
+      "Graphic Design",
+      "UI/UX"
+    ],
+    "city": "Riyadh",
+    "rate": 140,
+    "rating": 4.9,
+    "verified": true,
+    "modality": [
+      "Online"
+    ],
+    "languages": [
+      "Arabic",
+      "English"
+    ],
+    "experience": "Designer & mentor, 5 years",
+    "bio": "Portfolio‑first mentorship with weekly critiques. Learn Figma basics to advanced UI patterns.",
+    "avatar": "https://images.unsplash.com/photo-1544006656-28b44dc51b08?q=80&w=1200&auto=format&fit=crop"
+  }
+]

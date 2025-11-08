@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ustaadh — Verified Tutors Platform</title>
+  <meta name="description" content="Find verified tutors you can trust. Safe browsing & booking with trial lessons." />
+  <link rel="icon" href="./assets/logo.svg">
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#eefcf7',
+              100: '#d7f6eb',
+              200: '#b2ecd7',
+              300: '#7fe0c0',
+              400: '#43cfa2',
+              500: '#18b98b',
+              600: '#0d9e77',
+              700: '#0b7f62',
+              800: '#0c6752',
+              900: '#0c5545',
+            }
+          },
+          boxShadow: {
+            soft: '0 10px 30px rgba(0,0,0,0.08)'
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="./styles/app.css">
+</head>
+<body class="bg-gray-50 text-gray-900">
+  <!-- Header -->
+  <header class="sticky top-0 z-40 bg-white/80 backdrop-blur border-b border-gray-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <img src="./assets/logo.svg" alt="Ustaadh" class="h-9 w-9">
+        <div>
+          <h1 class="text-xl font-semibold tracking-tight">Ustaadh</h1>
+          <p class="text-xs text-gray-500 -mt-0.5">Verified Tutors • Safe Booking</p>
+        </div>
+      </div>
+      <nav class="hidden md:flex items-center gap-6 text-sm">
+        <a href="#find" class="hover:text-brand-600">Find Tutors</a>
+        <a href="#pricing" class="hover:text-brand-600">Tutor Plans</a>
+        <a href="#safety" class="hover:text-brand-600">Trust & Safety</a>
+      </nav>
+      <div class="flex items-center gap-3">
+        <a href="#pricing" class="hidden sm:inline-block px-4 py-2 rounded-xl border border-brand-200 text-brand-700 hover:bg-brand-50">For Tutors</a>
+        <a href="#find" class="px-4 py-2 rounded-xl bg-brand-600 text-white hover:bg-brand-700 shadow-soft">Book a Trial</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="relative overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14 lg:py-20 grid lg:grid-cols-2 gap-10 items-center">
+      <div>
+        <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-50 text-brand-700 text-xs border border-brand-100"> 
+          <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='currentColor' class='w-4 h-4'><path d='M12 1.5l3.09 6.26 6.91 1.005-5 4.87 1.18 6.865L12 17.77l-6.18 3.23L7 13.635l-5-4.87 6.91-1.005L12 1.5z'/></svg>
+          100% identity-verified tutors
+        </span>
+        <h2 class="mt-4 text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight tracking-tight">
+          Find trusted <span class="text-brand-600">tutors</span> — book a <span class="underline decoration-brand-300 decoration-4 underline-offset-4">trial lesson</span> in minutes.
+        </h2>
+        <p class="mt-4 text-gray-600 max-w-xl">Browse verified profiles, compare ratings and rates, and secure a safe trial booking. No spam, no scams — just quality learning.</p>
+        <div class="mt-6 flex items-center gap-3">
+          <a href="#find" class="px-5 py-3 rounded-xl bg-brand-600 text-white hover:bg-brand-700 shadow-soft">Explore Tutors</a>
+          <a href="#safety" class="px-5 py-3 rounded-xl border border-gray-200 hover:bg-gray-50">How we verify</a>
+        </div>
+        <p class="mt-4 text-xs text-gray-500">Revenue: 10–15% commission on bookings • Tutor subscriptions • Premium placements.</p>
+      </div>
+      <div class="relative">
+        <div class="rounded-3xl bg-white shadow-soft p-4">
+          <img src="./assets/learn.jpeg" alt="Learning" class="rounded-2xl w-full h-[380px] object-cover">
+        </div>
+        <div class="absolute -bottom-4 -left-4 bg-white shadow-soft rounded-2xl p-4 flex items-center gap-3">
+          <div class="p-2 bg-brand-50 rounded-lg text-brand-700">
+            <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='currentColor' class='w-5 h-5'><path d='M12 2a10 10 0 100 20 10 10 0 000-20zm1 14h-2v-2h2v2zm0-4h-2V6h2v6z'/></svg>
+          </div>
+          <div>
+            <p class="text-sm font-medium">Trial-ready</p>
+            <p class="text-xs text-gray-500">15–30 min intro sessions</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Finder -->
+  <section id="find" class="bg-white border-y border-gray-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <div class="flex flex-col lg:flex-row lg:items-end gap-4">
+        <div class="flex-1 grid sm:grid-cols-2 lg:grid-cols-4 gap-3">
+          <div>
+            <label class="text-xs text-gray-500">Search</label>
+            <input id="q" type="text" placeholder="e.g., Math, IELTS, Python" class="mt-1 w-full px-4 py-2.5 rounded-xl border focus:outline-none focus:ring-2 focus:ring-brand-300" />
+          </div>
+          <div>
+            <label class="text-xs text-gray-500">Subject</label>
+            <select id="subject" class="mt-1 w-full px-4 py-2.5 rounded-xl border focus:outline-none focus:ring-2 focus:ring-brand-300">
+              <option value="">Any</option>
+            </select>
+          </div>
+          <div>
+            <label class="text-xs text-gray-500">City</label>
+            <select id="city" class="mt-1 w-full px-4 py-2.5 rounded-xl border focus:outline-none focus:ring-2 focus:ring-brand-300">
+              <option value="">Any</option>
+            </select>
+          </div>
+          <div class="grid grid-cols-2 gap-3">
+            <div>
+              <label class="text-xs text-gray-500">Min Rate (SAR)</label>
+              <input id="rateMin" type="number" min="0" class="mt-1 w-full px-4 py-2.5 rounded-xl border focus:outline-none focus:ring-2 focus:ring-brand-300" placeholder="0">
+            </div>
+            <div>
+              <label class="text-xs text-gray-500">Max Rate (SAR)</label>
+              <input id="rateMax" type="number" min="0" class="mt-1 w-full px-4 py-2.5 rounded-xl border focus:outline-none focus:ring-2 focus:ring-brand-300" placeholder="500">
+            </div>
+          </div>
+        </div>
+        <div class="flex items-center gap-3">
+          <button id="clearFilters" class="px-4 py-2.5 rounded-xl border hover:bg-gray-50">Clear</button>
+          <button id="applyFilters" class="px-4 py-2.5 rounded-xl bg-brand-600 text-white hover:bg-brand-700 shadow-soft">Apply</button>
+        </div>
+      </div>
+
+      <div class="mt-6 flex items-center justify-between">
+        <p id="resultsCount" class="text-sm text-gray-600">Showing tutors…</p>
+        <div class="flex items-center gap-2">
+          <label class="text-xs text-gray-500">Sort</label>
+          <select id="sortBy" class="px-3 py-2 rounded-xl border">
+            <option value="relevance">Relevance</option>
+            <option value="rating">Rating</option>
+            <option value="rateAsc">Rate: Low → High</option>
+            <option value="rateDesc">Rate: High → Low</option>
+          </select>
+        </div>
+      </div>
+
+      <div id="cards" class="mt-6 grid sm:grid-cols-2 xl:grid-cols-3 gap-6"></div>
+    </div>
+  </section>
+
+  <!-- Pricing for Tutors -->
+  <section id="pricing" class="bg-gradient-to-b from-white to-brand-50/40">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      <div class="text-center max-w-2xl mx-auto">
+        <h3 class="text-3xl font-bold tracking-tight">Plans for Tutors</h3>
+        <p class="mt-3 text-gray-600">Get listed, verified, and discover new students. Upgrade for premium placement.</p>
+      </div>
+      <div class="mt-10 grid md:grid-cols-3 gap-6">
+        <div class="rounded-2xl bg-white border p-6 shadow-soft">
+          <h4 class="text-lg font-semibold">Starter</h4>
+          <p class="text-3xl font-bold mt-2">SAR 39<span class="text-sm text-gray-500 font-normal">/mo</span></p>
+          <ul class="mt-4 space-y-2 text-sm text-gray-700">
+            <li>• Directory listing</li>
+            <li>• Basic profile</li>
+            <li>• Student messages</li>
+          </ul>
+          <button class="mt-6 w-full px-4 py-2.5 rounded-xl bg-gray-900 text-white hover:bg-black">Choose Starter</button>
+        </div>
+        <div class="rounded-2xl bg-white border-2 border-brand-200 p-6 shadow-soft relative">
+          <span class="absolute -top-3 right-4 bg-brand-600 text-white text-xs px-2 py-1 rounded-full shadow">Most Popular</span>
+          <h4 class="text-lg font-semibold">Verified</h4>
+          <p class="text-3xl font-bold mt-2">SAR 79<span class="text-sm text-gray-500 font-normal">/mo</span></p>
+          <ul class="mt-4 space-y-2 text-sm text-gray-700">
+            <li>• Verified badge</li>
+            <li>• Higher search ranking</li>
+            <li>• Trial booking enabled</li>
+          </ul>
+          <button class="mt-6 w-full px-4 py-2.5 rounded-xl bg-brand-600 text-white hover:bg-brand-700">Choose Verified</button>
+        </div>
+        <div class="rounded-2xl bg-white border p-6 shadow-soft">
+          <h4 class="text-lg font-semibold">Premium</h4>
+          <p class="text-3xl font-bold mt-2">SAR 149<span class="text-sm text-gray-500 font-normal">/mo</span></p>
+          <ul class="mt-4 space-y-2 text-sm text-gray-700">
+            <li>• Top placement</li>
+            <li>• Featured subject tags</li>
+            <li>• Priority support</li>
+          </ul>
+          <button class="mt-6 w-full px-4 py-2.5 rounded-xl border border-brand-300 text-brand-700 hover:bg-brand-50">Choose Premium</button>
+        </div>
+      </div>
+      <p class="mt-6 text-center text-xs text-gray-500">Platform takes 10–15% commission per paid lesson.</p>
+    </div>
+  </section>
+
+  <!-- Trust & Safety -->
+  <section id="safety" class="bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      <div class="grid lg:grid-cols-3 gap-8">
+        <div class="lg:col-span-1">
+          <h3 class="text-2xl font-bold tracking-tight">Trust & Safety</h3>
+          <p class="mt-2 text-gray-600">We verify identity and credentials, screen profiles, and protect payments.</p>
+        </div>
+        <div class="lg:col-span-2 grid sm:grid-cols-2 gap-6">
+          <div class="rounded-2xl border bg-white p-5 shadow-soft">
+            <div class="p-2 rounded-lg bg-brand-50 text-brand-700 w-max mb-2">
+              <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='currentColor' class='w-5 h-5'><path d='M12 1l9 4v6c0 5-3.8 9.7-9 11-5.2-1.3-9-6-9-11V5l9-4zM7 12l3 3 7-7-1.4-1.4L10 12.2 8.4 10.6 7 12z'/></svg>
+            </div>
+            <h4 class="font-semibold">ID & credential checks</h4>
+            <p class="text-sm text-gray-600 mt-1">Government ID + degree/certificates. Manual review for premium tiers.</p>
+          </div>
+          <div class="rounded-2xl border bg-white p-5 shadow-soft">
+            <div class="p-2 rounded-lg bg-brand-50 text-brand-700 w-max mb-2">
+              <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='currentColor' class='w-5 h-5'><path d='M12 2a10 10 0 100 20 10 10 0 000-20zm-1 14l6-6-1.4-1.4L11 12.2 8.4 9.6 7 11l4 5z'/></svg>
+            </div>
+            <h4 class="font-semibold">Secure bookings</h4>
+            <p class="text-sm text-gray-600 mt-1">Escrow-style payment flow and dispute assistance.</p>
+          </div>
+          <div class="rounded-2xl border bg-white p-5 shadow-soft">
+            <div class="p-2 rounded-lg bg-brand-50 text-brand-700 w-max mb-2">
+              <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='currentColor' class='w-5 h-5'><path d='M12 3l1.9 3.9L18 8.2l-3 2.9.7 4.1L12 13.8l-3.7 1.9.7-4.1-3-2.9 4.1-.3L12 3z'/></svg>
+            </div>
+            <h4 class="font-semibold">Ratings you can trust</h4>
+            <p class="text-sm text-gray-600 mt-1">Reviews only from verified, paid lessons. No fake ratings.</p>
+          </div>
+          <div class="rounded-2xl border bg-white p-5 shadow-soft">
+            <div class="p-2 rounded-lg bg-brand-50 text-brand-700 w-max mb-2">
+              <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='currentColor' class='w-5 h-5'><path d='M20 7h-3V4h-2v3H9V4H7v3H4v2h3v6H4v2h3v3h2v-3h6v3h2v-3h3v-2h-3V9h3V7zm-5 8H9V9h6v6z'/></svg>
+            </div>
+            <h4 class="font-semibold">Subject-specific vetting</h4>
+            <p class="text-sm text-gray-600 mt-1">IELTS/TOEFL, Math, CS — tailored checks for each domain.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-gray-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+      <div>
+        <div class="flex items-center gap-3">
+          <img src="./assets/logo.svg" class="h-8 w-8" alt="logo">
+          <span class="font-semibold">Ustaadh</span>
+        </div>
+        <p class="mt-3 text-sm text-gray-400">A safer way to find tutors. © {year} Ustaadh.</p>
+      </div>
+      <div>
+        <h5 class="font-semibold">Students</h5>
+        <ul class="mt-2 space-y-1 text-sm text-gray-400">
+          <li><a href="#find" class="hover:text-white">Find a tutor</a></li>
+          <li><a href="#safety" class="hover:text-white">Safety</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5 class="font-semibold">Tutors</h5>
+        <ul class="mt-2 space-y-1 text-sm text-gray-400">
+          <li><a href="#pricing" class="hover:text-white">Plans</a></li>
+          <li><a href="#pricing" class="hover:text-white">Get verified</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5 class="font-semibold">Legal</h5>
+        <ul class="mt-2 space-y-1 text-sm text-gray-400">
+          <li><a href="#" class="hover:text-white">Terms</a></li>
+          <li><a href="#" class="hover:text-white">Privacy</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <div id="modalRoot"></div>
+
+  <script>document.body.innerHTML = document.body.innerHTML.replace('{year}', new Date().getFullYear());</script>
+  <script src="./scripts/app.js"></script>
+</body>
+</html>
